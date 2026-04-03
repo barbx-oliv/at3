@@ -7,30 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gestão de Convidados - EventMaster</h1>
-    <button id="btnDark">Modo Escuro</button>
-    <section id="cadastro">
-        <div class="Cadastro">
-        <form id="formCadastro">
-                <h2 class="tituloCa">Cadastro</h2>
-                <input type="text" name="" id="nome" placeholder="Digite o nome do convidado">
-                <input type="idade" name="" id="idade" placeholder="Digite a idade do convidado">
-                <input type="text" name="" id="cpf" placeholder="Digite o CPF do convidado">
-                <input type="email" name="" id="email" placeholder="Digite o email do convidado">
-                <input type="tel" name="" id="telefone" placeholder="Digite o telefone do convidado">
+    <button id="btnDark">Alterar Tema 🌗</button>
 
+    <header>
+        <h1 id="titulo">Gestão de Convidados - EventMaster</h1>
+        <p id="p">Preencha os campos para cadastrar os Convidados</p>
+    </header>
+
+    <div class="container-principal">
+        <section id="cadastro">
+            <form id="formCadastro">
+                <h1 class="tituloCa">Cadastro</h1>
+                <input type="text" id="nome" placeholder="Nome do convidado">
+                <input type="number" id="idade" placeholder="Idade">
+                <input type="text" id="cpf" placeholder="CPF">
+                <input type="email" id="email" placeholder="E-mail">
+                <input type="tel" id="telefone" placeholder="Telefone">
                 <button id="btnEnviar">Enviar</button>
             </form>
-        </div>
-    </section>
+        </section>
 
-    <section id="confirmado">
-        <div class="lateral">
-            <h2 class="tituloLa">Lista de Confirmados</h2>
+        <section id="confirmado">
+            <h1 class="tituloLa">Lista de Confirmados</h1>
             <ul id="listaConfirmado"></ul>
-        </div>
-    </section>
-
+        </section>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
