@@ -44,9 +44,9 @@ function criarCadastro(event) {
     localStorage.setItem("convidados", JSON.stringify(listaAtual)); 
     // Esta avisando que é para guardar os dados em "convidados" e tranforma a lista (array) em texto (string)
 
-    renderizarConvidado(novoConvidado);
+    renderizarConvidado(novoConvidado); // cria para a lista "convidados"
 
-    nome.value = ""; idade.value = ""; cpf.value = ""; email.value = ""; telefone.value = "";
+    nome.value = ""; idade.value = ""; cpf.value = ""; email.value = ""; telefone.value = ""; // limpa os campos
 }
 
 function renderizarConvidado(convidado) {
